@@ -9,7 +9,7 @@
 
 ## Features and vendors
 This proyecto is usign the following features and vendors:
-- [Laravel 8](https://laravel.com/docs/10.x)
+- [Laravel 10](https://laravel.com/docs/10.x)
 - [Laravel Breeze](https://laravel.com/docs/10.x/starter-kits#laravel-breeze)
 - [Laravel Sail](https://laravel.com/docs/10.x/sail)
 - [Laravel Livewire](https://laravel-livewire.com/)
@@ -18,6 +18,15 @@ This proyecto is usign the following features and vendors:
 - [AlpineJS v3](https://alpinejs.dev/)
 - [Laravel Collective - HTML v6](https://laravelcollective.com/docs/6.x/html)
 
+## Laravel features
+- [Laravel Migrations](https://laravel.com/docs/10.x/migrations)
+- [Laravel Controllers](https://laravel.com/docs/10.x/controllers)
+- [Laravel Models](https://laravel.com/docs/10.x/eloquent)
+- [Laravel Routes](https://laravel.com/docs/10.x/routing)
+- [Laravel Views](https://laravel.com/docs/10.x/blade)
+- [Laravel Jobs](https://laravel.com/docs/10.x/queues)
+- [Laravel Notifications](https://laravel.com/docs/10.x/notifications)
+- [Laravel Commands](https://laravel.com/docs/10.x/artisan)
 
 ## Installation
 
