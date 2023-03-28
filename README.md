@@ -16,6 +16,7 @@ This proyecto is usign the following features and vendors:
 - [FullCalendar v6](https://fullcalendar.io/)
 - [TailwindCSS v2](https://tailwindcss.com/)
 - [AlpineJS v3](https://alpinejs.dev/)
+- [Laravel Collective - HTML v6](https://laravelcollective.com/docs/6.x/html)
 
 
 ## Installation

@@ -1,7 +1,7 @@
 <div>
     {{-- Este div contendra el calendario --}}
     {{-- wire:ignore Evita que se recargue el componente --}}
-    <div id='reminders-calendar' wire:ignore></div>
+    <div id='reminders-calendar' wire:ignore class="bg-white p-6 rounded-lg shadow-lg"></div>
     <span wire:loading>
         <livewire:spinner />
     </span>

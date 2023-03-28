@@ -31,8 +31,12 @@ class Reminder extends Model
     ];
 
     // Esto es para que la columna reminder_day se guarde como un objeto Carbon
-    protected $dates = [
-        'reminder_day',
+    // protected $dates = [
+    //     'reminder_day'
+    // ];
+    protected $casts = [
+        'reminder_day' => 'datetime:Y-m-d',
+        'reminder_hour' => 'datetime:H:i',
     ];
 
     // Este metodo se ejecuta cada vez que el modelo es instanciado
@@ -75,9 +79,8 @@ class Reminder extends Model
     }
 
     // Accessor para el atributo date_formatted
-    public function getDateFormattedAttribute(): ?string
+    public function getDateFormattedAttribute(): string
     {
-        if (! $this->reminder_day) return null;
         return sprintf('%s %s', $this->reminder_day?->format("d-m-Y"), $this->reminder_hour_formatted);
     }
 
@@ -85,7 +88,7 @@ class Reminder extends Model
     public function canDelete() : bool
     {
         return ! $this->notified_at && (
-            $this->reminder_day->format("Y-m-d") . " " . $this->reminder_hour > now()->format('Y-m-d H:i')
+            $this->reminder_day->format("Y-m-d") . " " . $this->eminder_hour > now()->format('Y-m-d H:i')
         );
     }
 

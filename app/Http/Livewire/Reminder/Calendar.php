@@ -9,11 +9,11 @@ use Illuminate\Contracts\Support\Renderable;
 
 class Calendar extends Component
 {
-    const DEFAULT_COLOR = "#2F5AD8";
-    const NOTIFIED_COLOR = "#13B176";
+    const DEFAULT_COLOR      = "#2F5AD8";
+    const NOTIFIED_COLOR     = "#13B176";
     const NOT_NOTIFIED_COLOR = "#F78B00";
-    public string $reminders;
 
+    public string $reminders;
     public Carbon $fromDate;
     public Carbon $toDate;
 
