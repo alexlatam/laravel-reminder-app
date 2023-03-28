@@ -3,6 +3,7 @@
 namespace App\Jobs;
 
 use App\Models\Reminder;
+use App\Notifications\NewReminderNotification;
 use Illuminate\Bus\Queueable;
 use Illuminate\Contracts\Queue\ShouldBeUnique;
 use Illuminate\Contracts\Queue\ShouldQueue;
@@ -27,6 +28,7 @@ class SendRemindersJob implements ShouldQueue
      */
     public function handle(): void
     {
-        //
+        // Notificamos al usuario que tiene el recordatorio
+        $this->reminder?->user->notify(new NewReminderNotification($this->reminder));
     }
 }

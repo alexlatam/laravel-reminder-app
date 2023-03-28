@@ -12,7 +12,11 @@ class Kernel extends ConsoleKernel
      */
     protected function schedule(Schedule $schedule): void
     {
-        // $schedule->command('inspire')->hourly();
+        // Horario en que se ejecutara el comando "reminders:send-reminders"
+        // Cada minuto se ejecutara este comando que a su vez ejecutara un Job
+        // El Job se encargara de enviar los recordatorios mediante una Notificacion
+        // El canal de notificacion es el canal de correo electronico
+        $schedule->command('reminders:send-reminders')->everyMinute();
     }
 
     /**

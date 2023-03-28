@@ -51,4 +51,11 @@ sail npm install
 ```bash
 sail up -d
 ```
+4. configured commands
+This commands must cofigured like a cron job
+```bash
+sail artisan schedule:run
+sail artisan queue:work
+```
+
 
