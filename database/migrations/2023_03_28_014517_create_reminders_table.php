@@ -18,7 +18,7 @@ return new class extends Migration
             $table->date('reminder_day')->index();
             $table->time('reminder_hour')->index();
             $table->timestamp('reminder_timezone_date')->comment("Fecha real en la que notificamos al usuario");
-            $table->string('reminder_timezone')->default("America/Caracas");
+            $table->string('reminder_timezone')->default(config('app.timezone'));
             $table->timestamp('notified_at')->nullable();
             $table->timestamps();
         });
